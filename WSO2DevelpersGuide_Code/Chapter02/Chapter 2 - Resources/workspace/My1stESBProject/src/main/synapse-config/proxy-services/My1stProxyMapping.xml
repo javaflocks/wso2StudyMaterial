@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy name="My1stProxyMapping" startOnLoad="true" trace="disable"
+  transports="http https" xmlns="http://ws.apache.org/ns/synapse">
+  <target>
+    <inSequence>
+      <sequence key="InMappingSequence"/>
+    </inSequence>
+    <outSequence>
+      <sequence key="OutSequence"/>
+    </outSequence>
+    <faultSequence>
+      <sequence key="FaultSequence"/>
+    </faultSequence>
+  </target>
+</proxy>
